@@ -88,8 +88,8 @@
           "properties": {
             "display_mode": "context"
           },
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv}}\ue235 venv {{ .Full }}{{ end }}{{ end }} ",
-          "type": "python"
+          "template": " {{ if .Env.VIRTUAL_ENV }}\ue235 {{ replaceP \"/home/[^/]+\" .Env.VIRTUAL_ENV \"~\" }} {{ end }} ",
+          "type": "text"
         },
         {
           "background": "#4361ee",
