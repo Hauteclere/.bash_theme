@@ -19,8 +19,8 @@
     - `sudo apt-get install --upgrade git`
     - `git config --global user.name "Your Name"`
     - `git config --global user.email "youremail@domain.com"`
-    - Install Git for Windows (linked in the above page). You need to select the correct options here, but it's all the kind of stuff you'd expect.
-    - Link your Linux Git instance to the Windows GCM: `git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"`
+    - Install Git for Windows (linked in the above page). You need to select the correct options here, but it's all the kind of stuff you'd expect. **Recommend doing this as admin!**
+    - Link your Linux Git instance to the Windows GCM. The path may depend on what version of Git you have and whether or not you installed it as Admin. For instance, I am a doofus and failed to install Git as admin, so mine ended up here: `git config --global credential.helper "/mnt/c/Users/lavers/Appdata/Local/Programs/Git/mingw64/bin/git-credential-manager.exe"`
 12. Clone down this repo!
 13. Add the following line to the end of your `.bashrc`: `eval "$(oh-my-posh init bash --config ~/.bash_theme/bash_theme.json)"`
 14. Reload your profile: `exec bash`
