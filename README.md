@@ -22,3 +22,17 @@
     - Install Git for Windows (linked in the above page). You need to select the correct options here, but it's all the kind of stuff you'd expect.
     - Link your Linux Git instance to the Windows GCM: `git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"`
 12. Clone down this repo!
+13. Add the following line to the end of your `.bashrc`: `eval "$(oh-my-posh init bash --config ~/.bash_theme/bash_theme.json)"`
+14. Reload your profile: `exec bash`
+15. The font will be broken - symbols will be failing to render. To fix this:
+    - Download the font you've chosen from the Nerd Fonts website
+    - Unzip it
+    - Right click on the `.otf` file and select `Install`
+    - Open the `settings.json` for your Windows Terminal program
+    - Under `"profiles"` -> `"defaults"`, add the following structure:
+        ```json
+            "font": {
+                "face": "ComicShannsMono Nerd Font Mono"
+            }
+        ```
+    - Open a new bash terminal window in Windows Terminal to check it worked.
