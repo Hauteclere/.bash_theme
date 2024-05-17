@@ -13,3 +13,6 @@
         - install dependencies
         - install GCC
         - While you're at it, might as well install wget: `brew install wget`
+10. Install the OhMyPosh CLI themer: `brew install jandedobbeleer/oh-my-posh/oh-my-posh`
+    - You also need a Nerd Font. I recommend `ComicShannsMono`, but the OhMyPosh folks recommend `Meslo LGM NF`. Either way, install one with `oh-my-posh font install` (selecting the font of your choice from the menu)
+11. Set up Git: https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git
