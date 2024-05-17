@@ -36,3 +36,9 @@
             }
         ```
     - Open a new bash terminal window in Windows Terminal to check it worked.
+16. Install Pyenv: `brew install pyenv`
+17. Add the following line to your `.bashrc`: `eval "$(pyenv init --path)"` (and restart your bash terminal)
+18. Install the latest Python with `pyenv install` 
+    -  Run `pyenv --version` to see what version of Python is currently active for you. You may need to set the version you just installed to the global default with `pyenv global 3.10` (Subbing in correct version number).
+19. Install postgres with: `sudo apt install postgresql postgresql-contrib`
+20. Set postgres password with `sudo passwd postgres` 
