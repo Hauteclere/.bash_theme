@@ -16,3 +16,9 @@
 10. Install the OhMyPosh CLI themer: `brew install jandedobbeleer/oh-my-posh/oh-my-posh`
     - You also need a Nerd Font. I recommend `ComicShannsMono`, but the OhMyPosh folks recommend `Meslo LGM NF`. Either way, install one with `oh-my-posh font install` (selecting the font of your choice from the menu)
 11. Set up Git: https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git
+    - `sudo apt-get install --upgrade git`
+    - `git config --global user.name "Your Name"`
+    - `git config --global user.email "youremail@domain.com"`
+    - Install Git for Windows (linked in the above page). You need to select the correct options here, but it's all the kind of stuff you'd expect.
+    - Link your Linux Git instance to the Windows GCM: `git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"`
+12. Clone down this repo!
