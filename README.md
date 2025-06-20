@@ -5,7 +5,8 @@
 4. Install WSL by running the command `wsl --install` in Powershell (open as administrator)
 5. Update packages with `sudo apt update && sudo apt upgrade`
 6. Install Windows Terminal
-7. Install VS Code and WSL remote extension: https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode
+7. Install VS Code: https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode
+    - and WSL remote extension https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
     - You will need to sort out your other extensions later, but that's up to you
 9. Install Homebrew: https://brew.sh/
     - Be careful to follow the post-install instructions including:
